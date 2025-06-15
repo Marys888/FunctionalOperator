@@ -8,5 +8,6 @@ public class Main {
                 return a+b;
             }
         };
+        StringManipulator upperCased = str -> str.toUpperCase();
     }
 }
