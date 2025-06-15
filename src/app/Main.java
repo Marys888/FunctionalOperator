@@ -17,7 +17,7 @@ public class Main {
 
         getOutput("Сума чисел: " + sum.operate(3,14));
         getOutput("У верхньому регістрі: " + upperCased.manipulate(("to become a programmer, you should program!")));
-        getOutput("Скільки слів у верхньому регістрі: " + counter.apply("to become a programmer, you should program!"));
+        getOutput("Скільки слів у верхньому регістрі: " + counter.apply("to become a Programmer, you should Program!"));
         getOutput("Випадкове число в діапазоні 1-100: " + randomSupplier.get());
 
 
