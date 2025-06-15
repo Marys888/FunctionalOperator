@@ -14,5 +14,15 @@ public class Main {
         StringManipulator upperCased = str -> str.toUpperCase();
         Function<String, Integer> counter = StringListProcessor::countUpperCase;
         Supplier<Integer> randomSupplier = () -> RandomNumberGenerator.generateRandomNumber(1, 100);
+
+        getOutput("Сума чисел: " + sum.operate(3,14));
+        getOutput("У верхньому регістрі: " + upperCased.manipulate(("to become a programmer, you should program!")));
+        getOutput("Скільки слів у верхньому регістрі: " + counter.apply("to become a programmer, you should program!"));
+        getOutput("Випадкове число в діапазоні 1-100: " + randomSupplier.get());
+
+
+    }
+    public static void getOutput(String output){
+        System.out.println(output);
     }
 }
